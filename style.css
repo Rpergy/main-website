@@ -13,3 +13,14 @@ body {
     cursor: pointer;
     color: #d3d3d3;
 }
+
+.products {
+    border: 2px, solid, #76afe4;
+    padding: 5%;
+}
+
+#productsMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
