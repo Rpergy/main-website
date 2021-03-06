@@ -1,10 +1,15 @@
 body {
-  background-color: #3d3d3d;
-  color: white;
-  font-family: 'Hind Guntur', sans-serif;
-  text-align: center;
+    background-color: #3d3d3d;
+    color: white;
+    font-family: 'Hind Guntur', sans-serif;
+    text-align: center;
+  }
+  
+.blueText {
+    color: #85c4ff;
 }
 
-.blueText{
-  color: #85c4ff;
+.link:hover {
+    cursor: pointer;
+    color: #d3d3d3;
 }
