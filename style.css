@@ -28,11 +28,13 @@ body {
 }
 
 .buyNow {
-    border: 2px solid black;
+    border: 1px solid black;
     background-color: white;
     font-family: 'Hind Guntur', sans-serif;
     border-radius: 5px;
     font-size: 18px;
+    position: relative;
+    bottom: 20px;
 }
 
 .buyNow:hover {
@@ -44,8 +46,19 @@ body {
 }
 
 #seeOurProducts {
-    background-color: rgba(0, 0, 0, 0.40);
+    margin-left: 27%;
+    margin-right: 27%;
+    margin-bottom: 5%;
     display: flex;
     flex-direction: row;
-    height: 500px;
+    text-align: left;
+}
+
+.purchaseInputs {
+    font-family: 'Hind Guntur', sans-serif;
+    font-size: 15px;
+}
+
+#info {
+    margin-right: 3%;
 }
