@@ -16,7 +16,7 @@ body {
 
 .products {
     border: 2px solid #76afe4;
-    padding: 6%;
+    padding: 5%;
     margin: 5px;
     background-color: #363636;
 }
@@ -35,6 +35,17 @@ body {
     font-size: 18px;
 }
 
+.buyNow:hover {
+    cursor: pointer;
+}
+
 .productText {
     font-size: 25px;
+}
+
+#seeOurProducts {
+    background-color: rgba(0, 0, 0, 0.40);
+    display: flex;
+    flex-direction: row;
+    height: 500px;
 }
