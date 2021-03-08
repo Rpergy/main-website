@@ -82,3 +82,7 @@ body {
 .featuresImg {
     height: 50px;
 }
+
+.featuresDiv > h2 {
+    font-size: 20px;
+}
