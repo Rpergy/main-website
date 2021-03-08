@@ -1,9 +1,13 @@
 body {
-    background-color: #2c3442;
+    background-color: #202d3d;
     color: white;
     font-family: 'Hind Guntur', sans-serif;
     text-align: center;
-  }
+}
+
+#title {
+    font-family: 'Balsamiq Sans', cursive;
+}
   
 .blueText {
     color: #85c4ff;
