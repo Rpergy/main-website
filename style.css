@@ -86,3 +86,10 @@ body {
 .featuresDiv > h2 {
     font-size: 20px;
 }
+
+#topbar {
+    position: sticky;
+    top: 0px;
+    background-color: #2c3442;
+    border-bottom: 2px solid #222833;
+}
