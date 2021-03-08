@@ -93,3 +93,7 @@ body {
     background-color: #2c3442;
     border-bottom: 2px solid #222833;
 }
+
+#feature2 > img {
+    height: 40px;
+}
