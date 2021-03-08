@@ -116,10 +116,6 @@ body {
     right: 0px;
 }
 
-#feature2 > img {
-    height: 40px;
-}
-
 #whatWeDo > div {
     display: flex;
     flex-direction: row;
