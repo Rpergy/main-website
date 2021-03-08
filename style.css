@@ -94,12 +94,22 @@ body {
     border-bottom: 2px solid #222833;
 
     display: flex;
-    justify-content: left;
     flex-direction: row;
+
 }
 
 #topbar > h1 {
     margin-right: 10%;
+}
+
+#topbarTitle {
+    margin-left: 2%;
+    text-align: left;
+}
+
+#topbarLinks {
+    position: absolute;
+    right: 0px;
 }
 
 #feature2 > img {
