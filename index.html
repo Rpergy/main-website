@@ -12,22 +12,60 @@
   </head>
   
   <body>
-    <h1 id = "title"> <span class = "link" onclick = "window.location.href = 'index.html'"><span class = "blueText"> Rpergy</span> Dev</span></h1>
-    
-    <h2><span class = "link" onclick = "window.location.href = 'products.html'">Products</span> <span class = "blueText">|</span> <span class = "link" onclick = "window.location('')">About Me</span></h2>
+    <div id = "topbar">
+      <h1 id = "topbarTitle"> <span class = "link" onclick = "window.location.href = 'index.html'"><span class = "blueText"> Rpergy</span> Dev</span></h1>
+      <h1 id = "topbarLinks">
+        <span class = "link" onclick = "window.location.href = 'products.html'">Products</span>
+        <span class = "blueText"> | </span>
+        <span class = "link" onclick = "window.location.href = 'about.html'">About Me</span>
+        <span class = "blueText"> | </span><span class = Link onclick = "window.location.href = 'contact.html'">Contact</span>
+      </h1>
+    </div>
 
     <br> 
     
     <div id = "seeOurProducts">
       <div>
         <h1 id = "info"><span class = "blueText">Custom</span> Programmed websites, <span class = "blueText">tailored</span> to your needs</h1><br><br>
-        <button onclick = "window.location.href = 'products.html'" class = "buyNow"><img src = "9FFBACE1-5365-4063-9D63-4DF767CA6D9D.png" id = "rightArrow"> See our plans</button>
+        <button onclick = "window.location.href = 'products.html'" class = "buyNow"><img src = "arrowRight.png" id = "rightArrow"> See our plans</button>
       </div>
       <img src = "placeholder.png">
     </div>
 
+    <div id = "features">
+      <div id = "feature1" class = "featuresDiv">
+        <h2>Versatile designs that allow for unlimited creativity</h2>
+      </div>
+
+      <div id = "feature2" class = "featuresDiv">
+        <img src = "money.png" class = "featuresImg">
+        <h2>Affordable prices along with custom plans to fit your every need</h2>
+      </div>
+
+      <div id = "feature3" class = "featuresDiv">
+        <img src = "phone.png" class = "featuresImg">
+        <h2>Fully responsive webpages that work across multiple devices</h2>
+      </div>
+    </div>
+
     <div id = "whatWeDo">
-      
+      <h1>What <span class = "blueText">we</span> do here</h1>
+      <div>
+        <h4></h4>
+      </div>
+
+      <div>
+        <h4></h4>
+      </div>
+
+      <div>
+        <h4></h4>
+      </div>
+    </div>
+
+    <div id = "ready">
+      <h1>Ready to begin your digital journey?</h1> <br>
+      <button class = "buyNow" onclick = "window.location.href = 'products.html'"><img src = "arrowRight.png" id = "rightArrow"> Browse plans</button>
     </div>
   </body>
 </html>
