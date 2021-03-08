@@ -92,6 +92,14 @@ body {
     top: 0px;
     background-color: #2c3442;
     border-bottom: 2px solid #222833;
+
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+}
+
+#topbar > h1 {
+    margin-right: 10%;
 }
 
 #feature2 > img {
