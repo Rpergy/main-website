@@ -66,3 +66,14 @@ body {
 #rightArrow {
     height:10px;
 }
+
+#features {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.featuresDiv {
+    margin-right: 10%;
+    margin-left: 10%;
+}
