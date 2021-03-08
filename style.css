@@ -76,4 +76,9 @@ body {
 .featuresDiv {
     margin-right: 10%;
     margin-left: 10%;
+    width: 50%;
+}
+
+.featuresImg {
+    height: 50px;
 }
