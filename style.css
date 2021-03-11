@@ -127,7 +127,7 @@ body {
 }
 
 #productsTitle, #purchaseTitle {
-    margin-top: 5%;
+    margin-top: 8%;
 }
 
 #customPlan {
@@ -158,5 +158,9 @@ body {
 #customEditor {
     border: 1px solid #85c4ff;
     padding: 5%;
-    padding-top: 1%;
+    padding-top: 0%;
+}
+
+.featuresDiv > h2 {
+    width: 200px;
 }

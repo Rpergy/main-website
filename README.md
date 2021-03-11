@@ -2,6 +2,5 @@
 
 Things I need to do:
 - "About Me" page
-- Finish checkout page (Paypal dev acc)
-- Add "Custom" plan (Currently Doing)
+- Finish checkout page (Paypal dev acc) (Currently Doing)
 - Footer
