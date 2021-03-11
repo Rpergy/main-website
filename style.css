@@ -154,3 +154,7 @@ body {
 #purchaseForm {
     margin-right: 15%;
 }
+
+#customEditor {
+    border: 1px solid #85c4ff;
+}
