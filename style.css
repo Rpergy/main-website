@@ -18,7 +18,7 @@ body {
     color: #d3d3d3;
 }
 
-.products {
+.products, #customPlan {
     border: 2px solid #76afe4;
     padding: 5%;
     margin: 5px;
@@ -128,4 +128,29 @@ body {
 
 #productsTitle, #purchaseTitle {
     margin-top: 5%;
+}
+
+#customPlan {
+    margin-left: 17%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    flex-flow: wrap;
+}
+
+#customPlan > button {
+    height: 5%;
+}
+
+#purchsaeFormContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#purchaseForm {
+    margin-right: 15%;
 }

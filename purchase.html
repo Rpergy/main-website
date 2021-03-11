@@ -1,5 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang = "en">
   <head>
+    <meta charset="utf-8"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <link href = "style.css" rel = "stylesheet">
     <title>Rpergy Dev | Purchase a Product</title>
     
@@ -24,16 +28,29 @@
     <br>
     <h1 id = "purchaseTitle">Purchase a <span class = "blueText">Product</span></h1>
 
-    <div id = "purchaseForm">
+    <div id = "purchsaeFormContainer">
+      
+      <div id = "purchaseForm">
+        <h1>Personal <span class = "blueText">Information</span></h1>
         <input class = "purchaseInputs" type = "text" placeholder = "Full Name"> <br> <br>
         <input class = "purchaseInputs" type = "email" placeholder = "Email Address">
 
         <h3>Select your <span class = "blueText">plan</span>:</h3> 
         <select class = "purchaseInputs" id = "planSelection">
-            <option value = "basic">Basic</option>
+            <option value = "basic">Standard</option>
             <option value = "professional">Professional</option>
             <option value = "business">Business</option>
+            <option value = "custom">Custom</option>
         </select>
+      </div>
+      <div id = "customEditor">
+        <h1>Custom plan <span class = "blueText">editor</span></h1>
+        <h3>Standard Pages: </h3> <input type = "number" id = "standardCount" min = "0">
+        <h3>Professional Pages: </h3> <input type = "number" id = "proCount" min = "0">
+        <h3>Business Pages: </h3> <input type = "number" id = "businessCount" min = "0">
+      </div>
     </div>
+    <h1 id = "price">$0</h1>
   </body>
+  <script src = "source.js"></script>
 </html>
