@@ -2,6 +2,9 @@ $(document).on('change','#planSelection',function(){
     var plan = $("#planSelection").val();
 
     if(plan == "custom"){
+        $("#standardCount").val("0");
+        $("#proCount").val("0");
+        $("#businessCount").val("0");
         updatePrice();
     }
     else if(plan == "basic") {
