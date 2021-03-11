@@ -2,19 +2,15 @@ $(document).on('change','#planSelection',function(){
     var plan = $("#planSelection").val();
 
     if(plan == "custom"){
-        $("#customEditor").show();
         updatePrice();
     }
     else if(plan == "basic") {
-        $("#customEditor").hide();
         $("#price").html("$90");
     }
     else if(plan == "professional") {
-        $("#customEditor").hide();
         $("#price").html("$300");
     }
     else if(plan == "business") {
-        $("#customEditor").hide();
         $("#price").html("$900");
     }
 });
