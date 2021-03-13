@@ -126,7 +126,7 @@ body {
     flex-direction: row;
 }
 
-#productsTitle, #purchaseTitle {
+#productsTitle, #purchaseTitle, #aboutTitle {
     margin-top: 8%;
 }
 
@@ -152,7 +152,7 @@ body {
 }
 
 #purchaseForm {
-    margin-right: 15%;
+    margin-right: 5%;
 }
 
 #customEditor, #purchaseForm {
@@ -163,4 +163,9 @@ body {
 
 .featuresDiv > h2 {
     width: 200px;
+}
+
+.footer {
+    background-color: #2c3442;
+    border-top: 2px solid #222833;
 }
