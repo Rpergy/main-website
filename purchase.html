@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"></script>
 
     <link href = "style.css" rel = "stylesheet">
     <title>Rpergy Dev | Purchase a Product</title>
@@ -53,9 +54,14 @@
         <h3>Professional Pages: </h3> <input type = "number" id = "proCount" min = "0" value = "0">
         <h3>Business Pages: </h3> <input type = "number" id = "businessCount" min = "0" value = "0">
 
+        
+      </div>
+      <div id = "paypal-button-container"> 
+        <h1 class = "blueText">Checkout</h1><br>
         <h1 id = "price">$0</h1>
       </div>
     </div>
   </body>
   <script src = "source.js"></script>
+  <script src = "pay.js"></script>
 </html>

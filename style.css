@@ -151,11 +151,11 @@ body {
     justify-content: center;
 }
 
-#purchaseForm {
-    margin-right: 5%;
+#purchaseForm, #customEditor {
+    margin-right: 3%;
 }
 
-#customEditor, #purchaseForm {
+#customEditor, #purchaseForm, #paypal-button-container {
     border: 1px solid #85c4ff;
     padding: 5%;
     padding-top: 0%;

@@ -11,21 +11,21 @@ else if(plan == "basic") {
     $("#proCount").val("0");
     $("#businessCount").val("0");
         
-    $("#price").html("$90");
+    $("#price").html("Price: $90");
 }
 else if(plan == "professional") {
     $("#standardCount").val("0");
     $("#proCount").val("5");
     $("#businessCount").val("0");
 
-    $("#price").html("$300");
+    $("#price").html("Price: $300");
 }
 else if(plan == "business") {
     $("#standardCount").val("0");
     $("#proCount").val("0");
     $("#businessCount").val("10");
         
-    $("#price").html("$900");
+    $("#price").html("Price: $900");
 }
 
 $(document).on('change','#planSelection',function(){
@@ -42,21 +42,21 @@ $(document).on('change','#planSelection',function(){
         $("#proCount").val("0");
         $("#businessCount").val("0");
         
-        $("#price").html("$90");
+        $("#price").html("Price: $90");
     }
     else if(plan == "professional") {
         $("#standardCount").val("0");
         $("#proCount").val("5");
         $("#businessCount").val("0");
 
-        $("#price").html("$300");
+        $("#price").html("Price: $300");
     }
     else if(plan == "business") {
         $("#standardCount").val("0");
         $("#proCount").val("0");
         $("#businessCount").val("10");
         
-        $("#price").html("$900");
+        $("#price").html("Price: $900");
     }
 });
 
@@ -68,7 +68,7 @@ function updatePrice() {
 
     var fullPrice = standardPrice + proPrice + businessPrice;
 
-    $("#price").html("$" + fullPrice);
+    $("#price").html("Price: $" + fullPrice);
 }
 $("input").change(updatePrice);
 
