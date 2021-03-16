@@ -126,7 +126,7 @@ body {
     flex-direction: row;
 }
 
-#productsTitle, #purchaseTitle, #aboutTitle {
+#productsTitle, #purchaseTitle, #aboutTitle, #cartTitle {
     margin-top: 8%;
 }
 
@@ -172,4 +172,30 @@ body {
 
 #aboutDiv {
     margin: 10%;
+}
+
+#cartDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+#cartDiv > div {
+    border: 1px solid #85c4ff;
+    margin: 6%;
+    margin-top: 0px;
+    width: 40%;
+}
+
+#cart > div {
+    border: 1px solid #85c4ff;
+    margin: 2%;
+    text-align: left;
+}
+
+#cart > div > h3{
+    margin: 2%;
+}
+
+#cartPrice {
+    text-align: right;
 }
