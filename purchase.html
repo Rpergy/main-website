@@ -59,9 +59,23 @@
       <div id = "paypal-button-container"> 
         <h1 class = "blueText">Checkout</h1><br>
         <h1 id = "price">$0</h1>
+
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <table>
+          <tr><td><input type="hidden" name="on0" value="Pages">Pages</td></tr><tr><td><select name="os0">
+            <option value="Standard Page">Standard Page $30.00 USD</option>
+            <option value="Pro Page">Pro Page $60.00 USD</option>
+            <option value="Business Page">Business Page $90.00 USD</option>
+          </select> </td></tr>
+          </table>
+          <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </form>
+          
       </div>
     </div>
   </body>
   <script src = "source.js"></script>
-  <script src = "pay.js"></script>
 </html>
