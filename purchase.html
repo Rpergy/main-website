@@ -34,24 +34,17 @@
         <h1>Order <span class = "blueText">Information</span></h1>
         <input id = "nameInput" class = "purchaseInputs" type = "text" placeholder = "Full Name"> <br> <br>
         <input id = "emailInput" class = "purchaseInputs" type = "email" placeholder = "Email Address"> <br> <br>
-        <input id = "phoneInput" class = "purchaseInputs" type = "text" placeholder = "Phone Number">
+        <input id = "phoneInput" class = "purchaseInputs" type = "text" placeholder = "Phone Number"> <br> <br> <br>
+        <h2 id = "price">Price: $0</h2> <br> <br>
 
-        <h3>Select <span class = "blueText">your</span> plan:</h3> 
-        <form>
-          <select class = "purchaseInputs" id = "planSelection">
-            <option value = "custom">Custom</option>
-            <option value = "basic">Standard</option>
-            <option value = "professional">Professional</option>
-            <option value = "business">Business</option>
-          </select>
-        </form>
+        <input type = "submit" value = "Submit" id = "submit" class = "buyNow">
       </div>
       <div id = "customEditor">
         <h1><span class = "blueText">Custom</span> plan editor<h1>
         <h3>Standard Pages: </h3> <input type = "number" id = "standardCount" min = "0" value = "0">
         <h3>Professional Pages: </h3> <input type = "number" id = "proCount" min = "0" value = "0">
-        <h3>Business Pages: </h3> <input type = "number" id = "businessCount" min = "0" value = "0"> <br> <br> <br>
-        <input type = "submit" value = "Submit" id = "submit" class = "buyNow">
+        <h3>Business Pages: </h3> <input type = "number" id = "businessCount" min = "0" value = "0">
+        
       </div>
     </div>
   </body>
