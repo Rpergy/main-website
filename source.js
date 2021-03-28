@@ -1,3 +1,5 @@
+$("#thank").hide();
+
 function updatePrice() {
     if($("#standardCount").val() == "")
         $("#standardCount").val("0");
@@ -16,10 +18,10 @@ function updatePrice() {
 }
 $("input").change(updatePrice);
 
-function submit(event){
+function continueCheckout(event){
     event.preventDefault();
 
-    var data = {
+    data = {
         standardPages: parseInt($("#standardCount").val()),
         proPages: parseInt($("#proCount").val()),
         businessPages: parseInt($("#businessCount").val()),
@@ -30,5 +32,9 @@ function submit(event){
     };
 
     console.log(data);
+
+    $("#customEditor").hide();
+    $("#thank").show();
+    $("#submit").show();
 }
-$("#submit").click(submit);
+$("#submit").click(continueCheckout);
