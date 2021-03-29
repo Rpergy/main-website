@@ -99,7 +99,7 @@ body {
     font-size: 20px;
 }
 
-#topbar {
+#topbar, #phoneTopbar {
     position: fixed;
     width: 100%;
     top: 0px;
@@ -177,6 +177,10 @@ body {
     justify-content: center;
 }
 
+#purchsaeFormContainer > div {
+    width: 20%;
+}
+
 #purchaseForm, #customEditor {
     margin-right: 3%;
 }
@@ -249,4 +253,54 @@ body {
     margin: 2%;
     background-color: #202d3d;
     padding: 3%;
+}
+
+
+
+@media (max-width: 1025px) {
+    #info {
+        font-size: 25px;
+    }
+
+    #seeOurProducts {
+        margin-top: 8%;
+    }
+
+    .featuresDiv {
+        margin-right: 7%;
+        margin-left: 7%;
+        width: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+    #topbar, #mainImg {
+        display: none;
+    }
+
+    #seeOurProducts {
+        margin-top: 20%;
+    }
+
+    .featuresDiv, #productsMenu {
+        margin-right: 9%;
+        margin-left: 9%;
+    }
+    
+    #features, #productsMenu, #purchsaeFormContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products {
+        width: 75%;
+    }
+
+    #aboutDiv > h3 {
+        font-size: 15px;
+    }
+
+    #purchaseForm {
+        margin-bottom: 5%;
+    }
 }

@@ -23,6 +23,7 @@ $("input").change(updatePrice);
 function successOrder(){
     $("#checkoutSuccess").show();
     $("#customEditor").hide();
+    $("#submit").hide();
 }
 
 function submit(event){
