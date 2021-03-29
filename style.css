@@ -236,6 +236,12 @@ body {
     flex-direction: row;
     border: 1px solid #85c4ff;
     background-color: #2c3442;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#planDiv > div {
+    width: 33%;
 }
 
 #planDiv > div {
