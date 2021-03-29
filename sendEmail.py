@@ -1,33 +1,27 @@
 #!/usr/bin/python3
 
 import smtplib
-#SERVER = "localhost"
+import cgitb
+from helper import get_input
+from email.message import EmailMessage
 
-FROM = 'no-reply@rpergy.dev'
+cgitb.enable()
 
-TO = ["ryanp@rpergy.dev"] # must be a list
+print("Content-type: text/html\n\n")
 
-SUBJECT = "hello"
+input = get_input()
 
-TEXT = "blahblahblahblahblah"
+if(input):
+    msg = EmailMessage()
+    msg.set_content("Hey " + input["name"] + ", \nThank you for ordering from Rpergy Dev! Here are your order details: \n\n" + "Standard Pages: " + input["standardPages"] + "\nPro Pages: " + input["proPages"] + "\nBusiness Pages: " + input["businessPages"] + "\nPrice: " + input["price"] + "\n\n\nOther information you entered:\n" + 'Email: ' + input["email"] + "\nPhone: " + input["phone"] + "\n\nYou will be contacted within 1 business day to start planning your digital journey.\n\nThanks, \nRpergy")
 
-# Prepare actual message
+    msg['Subject'] = 'Rpergy Dev Order Confirmation'
+    msg['From'] = "noreply@rpergy.dev"
+    msg['To'] = input["email"]
+    msg['Cc'] = "ryanp@rpergy.dev"
 
-message = """\
-From: %s
-To: %s
-Subject: %s
-
-%s
-""" % (FROM, ", ".join(TO), SUBJECT, TEXT)
-
-# Send the mail
-
-s = smtplib.SMTP_SSL('smtp.dreamhost.com', 465)
-
-s.set_debuglevel(1)
-
-s.login(FROM, "wildC@mel10")
-
-s.sendmail(FROM, TO, message)
-s.quit()
+    # Send the message via our own SMTP server.
+    server = smtplib.SMTP_SSL('smtp.dreamhost.com', 465)
+    server.login("noreply@rpergy.dev", "password")
+    server.send_message(msg)
+    server.quit()

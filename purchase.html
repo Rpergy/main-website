@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"></script>
 
     <link href = "style.css" rel = "stylesheet">
     <title>Rpergy Dev | Purchase a Product</title>
@@ -26,7 +25,7 @@
     </div>
     
     <br>
-    <h1 class = "title">Page <span class = "blueText">Selection</span></h1>
+    <h1 class = "title">Purchase a <span class = "blueText">Product</span></h1>
 
     <div id = "purchsaeFormContainer">
       
@@ -39,7 +38,7 @@
 
         <input type = "submit" value = "Submit" id = "submit" class = "buyNow">
       </div>
-      <div id = "customEditor" class = "editor">
+      <div id = "customEditor">
         <h1><span class = "blueText">Page</span> editor<h1>
         <h3>Standard Pages: </h3> <input type = "number" id = "standardCount" min = "0" value = "0">
         <h3>Professional Pages: </h3> <input type = "number" id = "proCount" min = "0" value = "0">
@@ -48,10 +47,7 @@
         <h3><span class = "blueText">Can't choose?</span> <br> <span class = "link" onclick = "window.location.href = 'plan.html'">Check out our plan guides</span></h3>
       </div>
 
-      <div id = "thank" class = "editor">
-        <h2>Thank you for ordering from us!</h2>
-        <h3>You will receive an automated email and an email with further sign up instrutions later.</h3>
-      </div>
+      <div id = "checkoutSuccess"><h2>Thank you for ordering!</h2> <h3>You will recieve an email shortly.</h3></div>
     </div>
   </body>
   <script src = "source.js"></script>

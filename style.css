@@ -181,7 +181,7 @@ body {
     margin-right: 3%;
 }
 
-.editor, #purchaseForm, #paypal-button-container {
+#checkoutSuccess, #customEditor, #purchaseForm, #paypal-button-container {
     border: 1px solid #85c4ff;
     padding: 5%;
     padding-top: 0%;
@@ -243,8 +243,4 @@ body {
     margin: 2%;
     background-color: #202d3d;
     padding: 3%;
-}
-
-#thank {
-    width: 20%;
 }

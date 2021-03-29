@@ -1,4 +1,6 @@
-$("#thank").hide();
+var fullPrice;
+updatePrice();
+$("#checkoutSuccess").hide();
 
 function updatePrice() {
     if($("#standardCount").val() == "")
@@ -12,29 +14,36 @@ function updatePrice() {
     var proPrice = parseInt($("#proCount").val()) * 60;
     var businessPrice = parseInt($("#businessCount").val()) * 90;
 
-    var fullPrice = standardPrice + proPrice + businessPrice;
+    fullPrice = standardPrice + proPrice + businessPrice;
 
     $("#price").html("Price: $" + fullPrice);
 }
 $("input").change(updatePrice);
 
-function continueCheckout(event){
+function successOrder(){
+    $("#checkoutSuccess").show();
+    $("#customEditor").hide();
+}
+
+function submit(event){
     event.preventDefault();
 
-    data = {
-        standardPages: parseInt($("#standardCount").val()),
-        proPages: parseInt($("#proCount").val()),
-        businessPages: parseInt($("#businessCount").val()),
+    var orderInfo = {
+        "standardPages": parseInt($("#standardCount").val()),
+        "proPages": parseInt($("#proCount").val()),
+        "businessPages": parseInt($("#businessCount").val()),
 
-        name: $("#nameInput").val(),
-        email: $("#emailInput").val(),
-        phone: $("#phoneInput").val()
+        "name": $("#nameInput").val(),
+        "email": $("#emailInput").val(),
+        "phone": $("#phoneInput").val(),
+        "price": fullPrice
     };
 
-    console.log(data);
+    console.log(orderInfo);
 
-    $("#customEditor").hide();
-    $("#thank").show();
-    $("#submit").show();
+    $.ajax({
+        url: "sendEmail.py",
+        data: orderInfo
+    }).then(successOrder);
 }
-$("#submit").click(continueCheckout);
+$("#submit").click(submit);
