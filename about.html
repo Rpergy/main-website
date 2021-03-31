@@ -6,13 +6,14 @@
     <link href = "style.css" rel = "stylesheet">
     <title>Rpergy Dev | About Me</title>
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur&display=swap" rel="stylesheet">
   </head>
   
   <body>
     <div id = "topbar">
-      <h1 id = "topbarTitle"> <span class = "link" onclick = "window.location.href = 'index.html'"><span class = "blueText"> Rpergy</span> Dev</span></h1>
+      <h1 id = "topbarTitle"> <span class = "link" onclick = "window.location.href = 'https://rpergy.dev'"><span class = "blueText"> Rpergy</span> Dev</span></h1>
       <h1 id = "topbarLinks">
         <span class = "link" onclick = "window.location.href = 'products.html'">Products</span>
         <span class = "blueText"> | </span>
@@ -21,22 +22,44 @@
     </div>
 
     <div id = "phoneTopbar">
-      <h1 id = "topbarTitle"> <span class = "link" onclick = "window.location.href = 'index.html'"><span class = "blueText"> Rpergy</span> Dev</span></h1>
+        <img src = "menu.png" id = "menuButton" style = "width: 42px; height: 50px; margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%);">
+        <h1 id = "phoneTopbarTitle" style = "margin-left: 13%; position: absolute; margin-top: 24px;"> <span class = "link" onclick = "window.location.href = 'https://rpergy.dev'"><span class = "blueText"> Rpergy</span> Dev</span></h1>
+    </div>
+
+    <div id = "mobilePopout">
+        <h2><span class = "link" onclick = "window.location.href = 'https://rpergy.dev'"><span class = "blueText">Rpergy</span> Dev</span></h2>
+        
+        <br>
+        <br>
+
+        <h3 class = "link" onclick = "window.location.href = 'products.html'">Products</h3>
+        <h3 class = "link" onclick = "window.location.href = 'about.html'">About Me</h3>
     </div>
 
     <br>
 
     <div id = "aboutDiv">
       <h1 class = "title"><span class = "blueText">About</span> Me</h1>
-      <h3>Hey there! My name is Ryan and I am a website developer.<br>I love coding and developing things, so I thought I could offer my services to everyone</h3>
+      <h3>Hey there! My name is Ryan and I am a website developer.<br>I love to code and develop programs, so I'd like to offer my services to everyone</h3>
 
       <br>
 
       <h1>My <span class = "blueText">Process</span></h1>
-      <h3>If you order a product, I will send you an email to begin discussing the design you would like for your website. I will then make a rough draft of the site with minimal styling. After that, I'll check in with you again to make sure it's going the way you want it to.<br><br>
-          After that, I will continue to develop the site, checking in with you along the way. When the website is all done, I will publish it on a custom domain.<br>
-          If you would like to make any other edits to the website, you could just send me an email and I would make the update.
-      </h3>
+      <h3>When you order a product, I will send you an email to begin discussing the design you would like for your website. I will then make a rough draft of the site with minimal styling. I'll check in with you again to make sure it's going the way you want it to.<br><br>
+          After that, I will continue to develop the site, checking in with you along the way. When the website is all done, I will publish it on a custom domain.
     </div>
+    <div>
+    <div id = "contactForm">
+        <h3>Questions? Comments? Concerns?</h3>
+        <h1><span class = "blueText">Contact</span> Form</h1>
+        <input id = "contactName" type = "text" placeholder = "Name">
+        <input id = "contactEmail" type = "email" placeholder = "Email"> <br>
+        <textarea id = "contactMsg" placeholder = "Message"></textarea> <br>
+        <input id = "contactSubmit" type = "submit" value = "Submit">
+    </div>
+    <br>
+    <br>
+    <br>
   </body>
+  <script src = "source.js"></script>
 </html>

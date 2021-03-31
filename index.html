@@ -8,17 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href = "style.css" rel = "stylesheet">
     <title>Rpergy Dev</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet"> 
+
+    <meta name="google-site-verification" content="YpjFb0mlZXIbktmmXV6h9Oh2wAnFhZPoYE5Zj1J31SQ" />
   </head>
   
   <body>
     <div id = "topbar">
-      <h1 id = "topbarTitle"> <span class = "link" onclick = "window.location.href = 'index.html'"><span class = "blueText"> Rpergy</span> Dev</span></h1>
+      <h1 id = "topbarTitle"> <span class = "link" onclick = "window.location.href = 'https://rpergy.dev'"><span class = "blueText"> Rpergy</span> Dev</span></h1>
       <h1 id = "topbarLinks">
         <span class = "link" onclick = "window.location.href = 'products.html'">Products</span>
         <span class = "blueText"> | </span>
@@ -27,7 +31,18 @@
     </div>
 
     <div id = "phoneTopbar">
-      <h1 id = "topbarTitle"> <span class = "link" onclick = "window.location.href = 'index.html'"><span class = "blueText"> Rpergy</span> Dev</span></h1>
+        <img src = "menu.png" id = "menuButton" style = "width: 42px; height: 50px; margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%);">
+        <h1 id = "phoneTopbarTitle" style = "font-size: 202%; margin-left: 13%; position: absolute; margin-top: 24px;"> <span class = "link" onclick = "window.location.href = 'https://rpergy.dev'"><span class = "blueText"> Rpergy</span> Dev</span></h1>
+    </div>
+
+    <div id = "mobilePopout">
+        <h2><span class = "link" onclick = "window.location.href = 'https://rpergy.dev'"><span class = "blueText">Rpergy</span> Dev</span></h2>
+        
+        <br>
+        <br>
+
+        <h3 class = "link" onclick = "window.location.href = 'products.html'">Products</h3>
+        <h3 class = "link" onclick = "window.location.href = 'about.html'">About Me</h3>
     </div>
 
     <br> 
@@ -62,6 +77,15 @@
     <br>
     <br>
 
+    <div id = "contactForm">
+        <h3>Questions? Comments? Concerns?</h3>
+        <h1><span class = "blueText">Contact</span> Form</h1>
+        <input id = "contactName" type = "text" placeholder = "Name">
+        <input id = "contactEmail" type = "email" placeholder = "Email"> <br>
+        <textarea id = "contactMsg" placeholder = "Message"></textarea> <br>
+        <input id = "contactSubmit" type = "submit" value = "Submit">
+    </div>
+
     <div id = "ready">
       <h1>Ready to begin your digital journey?</h1> <br>
       <button class = "buyNow" onclick = "window.location.href = 'products.html'"><img src = "arrowRight.png" id = "rightArrow"> Browse plans</button>
@@ -80,5 +104,14 @@
         <h4>Purchae</h4>
       </div>
     </div>-->
+
+    <div id = "announcement">
+        <h3 id = "announcementText">This site is not fully developed yet. Please check back on <b>April 10th</b></h3>
+        <h2 id = "closeAnnouncements" class = "link" onclick = "$('#announcement').hide();">X</h2>
+    </div>
+    <br>
+    <br>
+    <br>
   </body>
+  <script src = "source.js"></script>
 </html>

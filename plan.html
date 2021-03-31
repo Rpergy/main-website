@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href = "style.css" rel = "stylesheet">
     <title>Rpergy Dev</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur&display=swap" rel="stylesheet">
@@ -15,7 +17,7 @@
   
   <body>
     <div id = "topbar">
-      <h1 id = "topbarTitle"> <span class = "link" onclick = "window.location.href = 'index.html'"><span class = "blueText"> Rpergy</span> Dev</span></h1>
+      <h1 id = "topbarTitle"> <span class = "link" onclick = "window.location.href = 'https://rpergy.dev'"><span class = "blueText"> Rpergy</span> Dev</span></h1>
       <h1 id = "topbarLinks">
         <span class = "link" onclick = "window.location.href = 'products.html'">Products</span>
         <span class = "blueText"> | </span>
@@ -24,7 +26,18 @@
     </div>
 
     <div id = "phoneTopbar">
-      <h1 id = "topbarTitle"> <span class = "link" onclick = "window.location.href = 'index.html'"><span class = "blueText"> Rpergy</span> Dev</span></h1>
+        <img src = "menu.png" id = "menuButton" style = "width: 42px; height: 50px; margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%);">
+        <h1 id = "phoneTopbarTitle" style = "margin-left: 13%; position: absolute; margin-top: 24px;"> <span class = "link" onclick = "window.location.href = 'https://rpergy.dev'"><span class = "blueText"> Rpergy</span> Dev</span></h1>
+    </div>
+
+    <div id = "mobilePopout">
+        <h2><span class = "link" onclick = "window.location.href = 'https://rpergy.dev'"><span class = "blueText">Rpergy</span> Dev</span></h2>
+        
+        <br>
+        <br>
+
+        <h3 class = "link" onclick = "window.location.href = 'products.html'">Products</h3>
+        <h3 class = "link" onclick = "window.location.href = 'about.html'">About Me</h3>
     </div>
 
     <br>
@@ -57,7 +70,7 @@
       <div id = "product1" class = "products">
         <h3 class = "productText">Standard</h3>
         <h4>$30 Upfront</h4>
-        <h1 class = "blueText">$10/mo</h1>
+        <h1 class = "blueText">$12/mo</h1>
         <h3>- Images, Text, and Links <br>- Basic CSS Styling</h3>
       </div>
 
@@ -75,5 +88,18 @@
         <h3>- Images, Text, and Links <br>- Basic CSS Styling<br>- Javascript Functionalities <br>- Databases</h3>
       </div>
     </div>
+    <br>
+    <div id = "contactForm">
+        <h3>Questions? Comments? Concerns?</h3>
+        <h1><span class = "blueText">Contact</span> Form</h1>
+        <input id = "contactName" type = "text" placeholder = "Name">
+        <input id = "contactEmail" type = "email" placeholder = "Email"> <br>
+        <textarea id = "contactMsg" placeholder = "Message"></textarea> <br>
+        <input id = "contactSubmit" type = "submit" value = "Submit">
+    </div>
+    <br>
+    <br>
+    <br>
   </body>
+  <script src = "source.js"></script>
 </html>

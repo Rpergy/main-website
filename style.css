@@ -62,7 +62,7 @@ body {
 
 #mainImg {
     margin: auto;
-    width: 110%;
+    width: 70%;
     padding: 10px;
 }
 
@@ -73,6 +73,7 @@ body {
 
 #info {
     margin-right: 3%;
+    font-size: 30px;
 }
 
 #rightArrow {
@@ -86,8 +87,8 @@ body {
 }
 
 .featuresDiv {
-    margin-right: 12%;
-    margin-left: 12%;
+    margin-right: 10%;
+    margin-left: 10%;
     width: 50%;
 }
 
@@ -99,7 +100,7 @@ body {
     font-size: 20px;
 }
 
-#topbar, #phoneTopbar {
+#topbar {
     position: fixed;
     width: 100%;
     top: 0px;
@@ -111,6 +112,10 @@ body {
     flex-direction: row;
 
     z-index: 2;
+}
+
+#phoneTopbar {
+    display: none;
 }
 
 #footer {
@@ -255,6 +260,64 @@ body {
     padding: 3%;
 }
 
+#features > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contactForm {
+    border: 1px solid #85c4ff;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+#contactSubmit {
+    border: 1px solid black;
+    background-color: white;
+    font-family: 'Hind Guntur', sans-serif;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+input {
+    font-family: 'Hind Guntur', sans-serif;
+}
+
+textarea {
+    font-family: 'Hind Guntur', sans-serif;
+}
+
+#contactForm > input {
+    margin: 2%;
+}
+
+#announcement {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    background-color: #2c3442;
+    border-top: 2px solid #222833;
+
+    display: flex;
+    flex-direction: row;
+
+    z-index: 2;
+}
+
+#closeAnnouncements {
+    right: 1%;
+    position: absolute;
+}
+
+#announcementText {
+    left: 1%;
+    position: relative;
+}
 
 
 @media (max-width: 1025px) {
@@ -267,15 +330,43 @@ body {
     }
 
     .featuresDiv {
-        margin-right: 7%;
-        margin-left: 7%;
-        width: 50%;
+        margin-right: 3%;
+        margin-left: 3%;
+        width: 33%;
+    }
+
+    #mainImg {
+        width: 148%;
     }
 }
 
 @media (max-width: 800px) {
+
+    body {
+        text-align: center;
+    }
+
     #topbar, #mainImg {
         display: none;
+    }
+
+    #phoneTopbar {
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        top: 0px;
+        left: 0px;
+        background-color: #2c3442;
+        border-bottom: 2px solid #222833;
+
+        display: flex;
+        flex-direction: row;
+
+        z-index: 2;
+    }
+
+    #phoneTopbarTitle {
+        font-size: 250%;
     }
 
     #seeOurProducts {
@@ -287,7 +378,7 @@ body {
         margin-left: 9%;
     }
     
-    #features, #productsMenu, #purchsaeFormContainer {
+    #features, #productsMenu, #purchsaeFormContainer, #planDiv {
         flex-direction: column;
         align-items: center;
     }
@@ -302,5 +393,44 @@ body {
 
     #purchaseForm {
         margin-bottom: 5%;
+    }
+
+    .title {
+        margin-top: 28%;
+    }
+
+    #purchsaeFormContainer > div, #planDiv > div {
+        width: 75%;
+    }
+
+    #planDiv {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #mobilePopout {
+        position: fixed;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        background-color: #2c3442;
+        border-right: 2px solid #222833;
+
+        display: flex;
+        flex-direction: column;
+
+        z-index: 3;
+
+        padding: 5%;
+    }
+
+    #contactForm {
+        width: 80%;
+        left: -20%;
+        position: relative;
+    }
+
+    #announcementText {
+        width: 89%;
     }
 }

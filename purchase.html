@@ -4,6 +4,7 @@
     <meta charset="utf-8"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href = "style.css" rel = "stylesheet">
     <title>Rpergy Dev | Purchase a Product</title>
     
@@ -16,7 +17,7 @@
   
   <body>
     <div id = "topbar">
-      <h1 id = "topbarTitle"> <span class = "link" onclick = "window.location.href = 'index.html'"><span class = "blueText"> Rpergy</span> Dev</span></h1>
+      <h1 id = "topbarTitle"> <span class = "link" onclick = "window.location.href = 'https://rpergy.dev'"><span class = "blueText"> Rpergy</span> Dev</span></h1>
       <h1 id = "topbarLinks">
         <span class = "link" onclick = "window.location.href = 'products.html'">Products</span>
         <span class = "blueText"> | </span>
@@ -25,7 +26,18 @@
     </div>
 
     <div id = "phoneTopbar">
-      <h1 id = "topbarTitle"> <span class = "link" onclick = "window.location.href = 'index.html'"><span class = "blueText"> Rpergy</span> Dev</span></h1>
+        <img src = "menu.png" id = "menuButton" style = "width: 42px; height: 50px; margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%);">
+        <h1 id = "phoneTopbarTitle" style = "margin-left: 13%; position: absolute; margin-top: 24px;"> <span class = "link" onclick = "window.location.href = 'https://rpergy.dev'"><span class = "blueText"> Rpergy</span> Dev</span></h1>
+    </div>
+
+    <div id = "mobilePopout">
+        <h2><span class = "link" onclick = "window.location.href = 'https://rpergy.dev'"><span class = "blueText">Rpergy</span> Dev</span></h2>
+        
+        <br>
+        <br>
+
+        <h3 class = "link" onclick = "window.location.href = 'products.html'">Products</h3>
+        <h3 class = "link" onclick = "window.location.href = 'about.html'">About Me</h3>
     </div>
     
     <br>
@@ -52,6 +64,9 @@
 
       <div id = "checkoutSuccess"><h2>Thank you for ordering!</h2> <h3>You will recieve an email shortly.</h3></div>
     </div>
+    <br>
+    <br>
+    <br>
   </body>
   <script src = "source.js"></script>
 </html>
