@@ -62,7 +62,7 @@ body {
 
 #mainImg {
     margin: auto;
-    width: 70%;
+    width: 30vw;
     padding: 10px;
 }
 
@@ -333,10 +333,6 @@ textarea {
         margin-right: 3%;
         margin-left: 3%;
         width: 33%;
-    }
-
-    #mainImg {
-        width: 148%;
     }
 }
 
