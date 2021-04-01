@@ -366,6 +366,7 @@ textarea {
         animation-name: none;
         animation-duration: 1s;
         animation: bubble 1.0s forwards;
+        margin-left: 15%;
     }
 
     #seeOurProducts {
@@ -431,6 +432,7 @@ textarea {
         animation-name: none;
         animation-duration: 1s;
         animation: bubble 1.0s forwards;
+        left: 10px;
     }
 
     #contactForm {
@@ -456,21 +458,21 @@ textarea {
 }
 
 @keyframes titleSlideIn {
-    from {font-size: 202%; margin-left: 13%; position: absolute; margin-top: 24px; opacity: 100%;}
+    from {font-size: 202%; margin-left: 15%; position: absolute; margin-top: 24px; opacity: 100%;}
     to {font-size: 155%; margin-left: 57%; position: absolute; margin-top: 31px; opacity: 0%;}
 }
 
 @keyframes titleSlideOut {
     from {font-size: 155%; margin-left: 57%; position: absolute; margin-top: 31px; opacity: 0%;}
-    to {font-size: 202%; margin-left: 13%; position: absolute; margin-top: 24px; opacity: 100%;}
+    to {font-size: 202%; margin-left: 15%; position: absolute; margin-top: 24px; opacity: 100%;}
 }
 
 @keyframes buttonSlideIn {
-    from {left: 1px; width: 42px; height: 50px; margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%);}
+    from {left: 10px; width: 42px; height: 50px; margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%);}
     to {left: 169px; width: 42px; height: 50px; margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%);}
 }
 
 @keyframes buttonSlideOut {
     from {left: 169px; width: 42px; height: 50px; margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%);}
-    to {left: 1px; width: 42px; height: 50px; margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%);}
+    to {left: 10px; width: 42px; height: 50px; margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%);}
 }
