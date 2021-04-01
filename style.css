@@ -363,6 +363,9 @@ textarea {
 
     #phoneTopbarTitle {
         font-size: 250%;
+        animation-name: none;
+        animation-duration: 1s;
+        animation: bubble 1.0s forwards;
     }
 
     #seeOurProducts {
@@ -418,6 +421,16 @@ textarea {
         z-index: 3;
 
         padding: 5%;
+
+        animation-name: slideIn;
+        animation-duration: 1s;
+        animation: bubble 1.0s forwards;
+    }
+
+    #menuButton {
+        animation-name: none;
+        animation-duration: 1s;
+        animation: bubble 1.0s forwards;
     }
 
     #contactForm {
@@ -429,4 +442,35 @@ textarea {
     #announcementText {
         width: 89%;
     }
+}
+
+/*Animations*/
+@keyframes slideIn {
+    from {left: -200px;}
+    to {left: 0px;}
+}
+
+@keyframes slideOut {
+    from {left: 0px;}
+    to {left: -200px;}
+}
+
+@keyframes titleSlideIn {
+    from {font-size: 202%; margin-left: 13%; position: absolute; margin-top: 24px;}
+    to {font-size: 155%; margin-left: 57%; position: absolute; margin-top: 31px;}
+}
+
+@keyframes titleSlideOut {
+    from {font-size: 155%; margin-left: 57%; position: absolute; margin-top: 31px;}
+    to {font-size: 202%; margin-left: 13%; position: absolute; margin-top: 24px;}
+}
+
+@keyframes buttonSlideIn {
+    from {left: 1px; width: 42px; height: 50px; margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%);}
+    to {left: 169px; width: 42px; height: 50px; margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%);}
+}
+
+@keyframes buttonSlideOut {
+    from {left: 169px; width: 42px; height: 50px; margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%);}
+    to {left: 1px; width: 42px; height: 50px; margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%);}
 }

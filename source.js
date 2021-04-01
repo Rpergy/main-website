@@ -54,24 +54,25 @@ $("#submit").click(submit);
 var popOutVisible = false;
 
 function popOut() {
-    //topbarTitle, menuButton
 
     popOutVisible = !popOutVisible;
     if(popOutVisible) {
         $("#mobilePopout").show();
-        $("#phoneTopbarTitle").attr("style", "font-size: 155%; margin-left: 57%; position: absolute; margin-top: 31px;");
-        $("#menuButton").attr("style", "left: 169px; width: 42px; height: 50px; margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%);");
+        $("#mobilePopout").css("animation-name", "slideIn");
+        $("#phoneTopbarTitle").css("animation-name", "titleSlideIn");
+        $("#menuButton").css("animation-name", "buttonSlideIn");
     }
     else if(!popOutVisible) {
-        $("#mobilePopout").hide();
-        $("#phoneTopbarTitle").attr("style", "font-size: 202%; margin-left: 13%; position: absolute; margin-top: 24px;");
-        $("#menuButton").attr("style", "left: 1px; width: 42px; height: 50px; margin: 0; position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%);");
+        $("#mobilePopout").css("animation-name", "slideOut");
+        //$("#mobilePopout").hide();
+        $("#phoneTopbarTitle").css("animation-name", "titleSlideOut");
+        $("#menuButton").css("animation-name", "buttonSlideOut");
     }
 }
 $("#menuButton").click(popOut);
 
 
-function contactSubmit() {
+function contactSubmit(event) {
     event.preventDefault();
 
     var contactInfo = {
