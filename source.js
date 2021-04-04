@@ -45,7 +45,7 @@ function submit(event){
     console.log(orderInfo);
 
     $.ajax({
-        url: "sendEmail.py",
+        url: "https://rpergy.dev/sendEmail.py",
         data: orderInfo
     }).then(successOrder);
 }
@@ -84,7 +84,7 @@ function contactSubmit(event) {
 
     $.ajax({
         data: contactInfo,
-        url: "sendEmail.py"
+        url: "https://rpergy.dev/sendEmail.py"
     }).then($("#contactForm").html("<h1><span class = 'blueText'>Contact</span> Form</h1><br><h3>Thank you for submitting a contact ticket! You will recieve an answer in 1-3 business days.</h3>"));
 }
 $("#contactSubmit").click(contactSubmit);

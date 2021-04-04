@@ -7,8 +7,6 @@ from email.message import EmailMessage
 
 cgitb.enable()
 
-print("Content-type: text/html\n\n")
-
 input = get_input()
 
 if(input):
