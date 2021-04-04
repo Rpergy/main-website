@@ -187,13 +187,15 @@ body {
 }
 
 #purchaseForm, #customEditor {
-    margin-right: 3%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
 }
 
-#checkoutSuccess, #customEditor, #purchaseForm, #paypal-button-container {
+#checkoutSuccess, #customEditor, #purchaseForm, #pal-button-container {
     border: 1px solid #85c4ff;
     padding: 5%;
     padding-top: 0%;
+    padding-bottom: 0px;
 }
 
 .featuresDiv > h2 {
@@ -318,6 +320,17 @@ textarea {
     left: 1%;
     position: relative;
 }
+
+.blueLink {
+    color: #85c4ff;
+    text-decoration: underline;
+}
+
+.blueLink:hover {
+    color: #95c3ee;
+    cursor: pointer;
+}
+
 
 
 @media (max-width: 1025px) {
